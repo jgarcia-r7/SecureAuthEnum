@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Secure Auth Enumeration
 # Author: Jessi
-# Descriptions: Leverages a user account numeration vulnerability in SecureAuth's ASP.NET form.
+# Description: Leverages a user account numeration vulnerability in SecureAuth's ASP.NET form.
 # Google Dork: inurl:/SecureAuth6 OR inurl:/SecureAuth18
 # Usage: ./SecureAuthEnum.py -t https://auth.domain.com/SecureAuth6 -u users.txt -o valid_users.txt
 
@@ -38,7 +38,7 @@ if len(sys.argv) <= 1:
 
 
 # Define parser and arguments.
-parser = argparse.ArgumentParser(description=f'{RED}{BRIGHT}Rapid7 Breach Database{RST}: Query the Rapid7 breach database for email addresses and passwords.{RST}')
+parser = argparse.ArgumentParser(description=f'{RED}{BRIGHT}SecureAuthEnum{RST}: Enumerate valid user accounts from a SecureAuth instance.{RST}')
 
 parser.add_argument('-t', '--target_url', help=f'Target URL {RED}{BRIGHT}REQUIRED{RST}', default=None, required=True)
 parser.add_argument('-u', '--users', help=f'Users list {RED}{BRIGHT}REQUIRED{RST}', default=None, required=False)
