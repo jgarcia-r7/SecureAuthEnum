@@ -134,7 +134,7 @@ for user in users:
             valid_users.append(user)
 
 
-with open("valid_users.txt", "wt") as results_file:
+with open(output, "wt") as results_file:
     results_file.write("".join(valid_users))
 
 userSum = 0
