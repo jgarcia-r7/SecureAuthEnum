@@ -135,7 +135,7 @@ for user in users:
 
 
 with open("valid_users.txt", "wt") as results_file:
-    results_file.write("\n".join(valid_users))
+    results_file.write("".join(valid_users))
 
 userSum = 0
 for i in valid_users:
