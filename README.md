@@ -22,11 +22,11 @@ pip3 install -r requirements.txt
 ```
 
 ## Examples:  
-Check only (Vulnearble):  
-![image](https://user-images.githubusercontent.com/81575551/162826112-12b1dfa8-0694-47f8-9b0a-4502cf17be5b.png)
+Main use (Enumerating User):  
+![image](https://user-images.githubusercontent.com/81575551/162858591-056d6f15-ccc4-4d5e-9bfb-a59365273427.png)
 
-Check only (Not Vulnerable):  
-![image](https://user-images.githubusercontent.com/81575551/162826232-128953f6-f0db-4c3c-ac4c-86b78af0310e.png)
+Checking if vulnerable (Vuln):  
+![image](https://user-images.githubusercontent.com/81575551/162858707-382a3e4b-e5b8-4f26-9dc0-b23fbd68cab4.png)
 
-Enumerating users:  
-![image](https://user-images.githubusercontent.com/81575551/162826370-f06edc75-6fa8-4ec6-b825-4b7cf9733d27.png)
+Check if vulnerable (Not):  
+![image](https://user-images.githubusercontent.com/81575551/162858851-a69a297c-f6a9-4449-be2c-06b54b7d279f.png)
